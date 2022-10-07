@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testing-app", "testing-app\testing-app.csproj", "{B9837C09-83B0-45F9-9CC7-9A7425E35C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API-consulta-Pessoa-Cadastrada", "API-consulta-Pessoa-Cadastrada\API-consulta-Pessoa-Cadastrada.csproj", "{BFC43F27-6633-4487-A534-7C9062534EA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9837C09-83B0-45F9-9CC7-9A7425E35C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9837C09-83B0-45F9-9CC7-9A7425E35C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9837C09-83B0-45F9-9CC7-9A7425E35C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9837C09-83B0-45F9-9CC7-9A7425E35C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC43F27-6633-4487-A534-7C9062534EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC43F27-6633-4487-A534-7C9062534EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC43F27-6633-4487-A534-7C9062534EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC43F27-6633-4487-A534-7C9062534EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F83A297-C973-48BD-BE73-4190EF5C3ABB}
+	EndGlobalSection
+EndGlobal
