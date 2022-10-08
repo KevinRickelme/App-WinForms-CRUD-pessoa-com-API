@@ -1,7 +1,9 @@
+using API_consulta_Pessoa_Cadastrada.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +12,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Design;
+using testing_app.Model;
+using API_consulta_Pessoa_Cadastrada.Interfaces;
+using API_consulta_Pessoa_Cadastrada.Repositories;
 
 namespace API_consulta_Pessoa_Cadastrada
 {
@@ -26,6 +32,9 @@ namespace API_consulta_Pessoa_Cadastrada
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:MyConnection"]));
+            services.AddTransient<IPessoa, PessoaRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

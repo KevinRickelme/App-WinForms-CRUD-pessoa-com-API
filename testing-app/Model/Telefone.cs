@@ -6,9 +6,8 @@ namespace testing_app.Model
 {
     public class Telefone
     {
-        int Id;
-        string DDD;
-        string Numero;
-        TipoTelefone TipoTelefone;
+        public int DDD { get; set; }
+        public string Numero { get; set; }
+        public TipoTelefone TipoTelefone { get; set; }
     }
 }
